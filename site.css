@@ -45,6 +45,18 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--sun-deep);
+  outline-offset: 3px;
+}
+
+.pricing-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.78;
+}
+
 img {
   max-width: 100%;
 }
@@ -132,6 +144,20 @@ img {
   color: #fff8f2;
   border-color: transparent;
   background: linear-gradient(135deg, #dd734f, #efaa60);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .button-link.ghost {
