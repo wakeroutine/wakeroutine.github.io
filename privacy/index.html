@@ -6,7 +6,7 @@
   <title>WakeRoutine Privacy Policy</title>
   <meta
     name="description"
-    content="Privacy policy for WakeRoutine, including local app storage, notification permissions, and Apple-managed subscriptions."
+    content="Privacy policy for WakeRoutine, including local app storage, alarm access, and Apple-managed subscriptions."
   />
   <link rel="icon" href="../assets/brand-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../site.css?v=1" />
@@ -35,7 +35,7 @@
           </div>
           <p>
             WakeRoutine is designed to keep the core experience on your device. It stores routine
-            preferences locally, uses notifications for alarms, and uses Apple and RevenueCat for purchases.
+            preferences locally, uses AlarmKit for system alarms, and uses Apple and RevenueCat for purchases.
           </p>
           <div class="callout"><strong>Last updated:</strong> August 29, 2026</div>
         </div>
@@ -83,7 +83,7 @@
         <div class="detail-grid">
           <article class="detail-card">
             <h3>Alarm delivery</h3>
-            <p>On iOS 26, WakeRoutine requests system alarm access and uses Apple’s AlarmKit to schedule alarms you create. On earlier supported iOS versions, it requests notification permission and schedules local notification alerts. Permission status and alarm schedules are managed by iOS.</p>
+            <p>WakeRoutine requires iOS 26 or later, requests system alarm access, and uses Apple’s AlarmKit to schedule alarms you create. Permission status and alarm schedules are managed by iOS.</p>
           </article>
           <article class="detail-card">
             <h3>Audio playback</h3>
