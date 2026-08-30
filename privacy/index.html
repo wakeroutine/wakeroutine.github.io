@@ -76,14 +76,14 @@
         <div class="panel-head">
           <div>
             <span class="tag">Permissions</span>
-            <h2>Notifications and audio behavior</h2>
+            <h2>Alarm permissions and audio behavior</h2>
           </div>
         </div>
 
         <div class="detail-grid">
           <article class="detail-card">
-            <h3>Notifications</h3>
-            <p>WakeRoutine requests notification permission so it can schedule and deliver alarms at your chosen time.</p>
+            <h3>Alarm delivery</h3>
+            <p>On iOS 26, WakeRoutine requests system alarm access and uses Apple’s AlarmKit to schedule alarms you create. On earlier supported iOS versions, it requests notification permission and schedules local notification alerts. Permission status and alarm schedules are managed by iOS.</p>
           </article>
           <article class="detail-card">
             <h3>Audio playback</h3>
